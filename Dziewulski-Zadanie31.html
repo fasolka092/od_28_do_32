@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+
+var Mebel = {
+
+rodzaj: 'krzeslo',
+kolor: 'czarny',
+material: 'drewno',
+
+Mebel_wyswietl_Dziewulski: function ()
+{
+document.write(this.rodzaj + " " + this.kolor + " " + this.material + "<br>");
+}
+
+}
+
+Mebel.Mebel_wyswietl_Dziewulski();
+
+Mebel.cena = 500;
+
+Mebel.Mebel_pokaz_Dziewulski = function ()
+{
+alert("Cena mebla: " + this.cena + " zł");
+}
+
+Mebel.Mebel_pokaz_Dziewulski();
+
+</script>
+
+</head>
+
+<body>
+
+<br>Programowanie obiektowe.<br>
+
+Obiekt to: Mebel<br>
+
+Pola:<br>
+rodzaj<br>
+kolor<br>
+material<br>
+
+Metoda: Mebel_wyswietl_Dziewulski<br>
+
+Nowe pole to: cena<br>
+
+Nowa metoda to: Mebel_pokaz_Dziewulski()<br>
+
+</body>
+</html>

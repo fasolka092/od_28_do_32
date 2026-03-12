@@ -1,0 +1,58 @@
+<textarea cols="80" rows="70">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 32</title>
+
+<script type="text/javascript">
+
+function Mebel(rodzaj_k, kolor_k, material_k, cena_k)
+{
+this.rodzaj = rodzaj_k;
+this.kolor = kolor_k;
+this.material = material_k;
+this.cena = cena_k;
+}
+
+Mebel.prototype.wyswietl = function ()
+{
+document.write(this.rodzaj + " " + this.kolor + " " + this.material + " " + this.cena + "<br>");
+};
+
+var mebel1 = new Mebel("krzeslo","czarny","drewno",300);
+var mebel2 = new Mebel("stol","bialy","metal",700);
+var mebel3 = new Mebel("szafa","brazowy","drewno",1200);
+
+mebel1.wyswietl();
+mebel2.wyswietl();
+mebel3.wyswietl();
+
+document.write("<br>Dostęp do właściwości<br>");
+
+document.write("Mebel1: " + mebel1.rodzaj + " " + mebel1.kolor + " " + mebel1.material + " " + mebel1.cena + "<br>");
+document.write("Mebel2: " + mebel2.rodzaj + " " + mebel2.kolor + " " + mebel2.material + " " + mebel2.cena + "<br>");
+document.write("Mebel3: " + mebel3.rodzaj + " " + mebel3.kolor + " " + mebel3.material + " " + mebel3.cena + "<br>");
+
+Mebel.prototype.producent = "IKEA";
+
+Mebel.prototype.Mebel_pokaz_Dziewulski = function ()
+{
+alert("Producent: " + this.producent);
+};
+
+</script>
+
+</head>
+
+<body>
+
+<br>Programowanie obiektowe
+
+<br><br>
+
+<input type="button" value="Pokaz producenta mebla 1"
+onclick="mebel1.Mebel_pokaz_Dziewulski()">
+
+</body>
+</html>
+</textarea>

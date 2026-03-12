@@ -1,0 +1,93 @@
+<textarea cols="100" rows="100">
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 29</title>
+</head>
+
+<body>
+
+<H1>Pytanie 1. W jaki sposób można określić właściwość obiektu?</H1>
+
+<H1>Odpowiedź:</H1>
+
+<H1>Sposób 1:</H1>
+<H1>
+nazwa_obiektu.nazwa_właściwości = wartość
+<br>np. auto.marka = "Opel Omega"
+<br>auto.rok = 1996
+</H1>
+
+<H1>Sposób 2:</H1>
+<H1>
+nazwa_obiektu["nazwa_właściwości"]
+<br>np. auto["cena"] = 25000
+</H1>
+
+<H1>Pytanie 2. Jak odwołać się do pól i metod?</H1>
+
+<H1>Odpowiedź:</H1>
+
+<H1>
+Do pól i metod odwołujemy się poprzez nazwę obiektu i kropkę.
+<br>np. console.log(samochod1.kolor)
+</H1>
+
+<H1>Pytanie 3. Cechy konstruktora.</H1>
+
+<H1>Odpowiedź:</H1>
+
+<H1>
+• uruchamia się automatycznie podczas tworzenia obiektu<br>
+• ma taką samą nazwę jak klasa<br>
+• nie zwraca wartości<br>
+• może przyjmować argumenty
+</H1>
+
+<H1>Pytanie 4. Przykład obiektu.</H1>
+
+<H1>
+var osoba_1 = {<br>
+nazwisko:'Kowalski',<br>
+imie:'Jan',<br>
+zawod:'piekarz',<br>
+wyswietl:function(){<br>
+document.write(this.nazwisko + " " + this.imie)<br>
+}<br>
+}
+</H1>
+
+<H1>Pytanie 5. Znaczenie słowa this.</H1>
+
+<H1>
+Słowo this pozwala odwołać się do właściwości lub metod
+danego obiektu z wnętrza tego obiektu.
+</H1>
+
+<H1>Pytanie 6. Konstruktor w JS.</H1>
+
+<H1>
+function klient(nazwisko,imie,zawod){<br>
+this.nazwisko = nazwisko<br>
+this.imie = imie<br>
+this.zawod = zawod<br>
+}
+</H1>
+
+<H1>Pytanie 7. Znaczenie słowa new.</H1>
+
+<H1>
+Operator new służy do tworzenia nowego obiektu.
+<br>np. var osoba1 = new klient("Kowalski","Jan","kierowca")
+</H1>
+
+<H1>Pytanie 8. Znaczenie prototype.</H1>
+
+<H1>
+Prototype pozwala dodawać właściwości i metody
+do wszystkich obiektów utworzonych z konstruktora.
+</H1>
+
+</body>
+</html>
+</textarea>

@@ -1,0 +1,49 @@
+<textarea cols="80" rows="55">
+<html>
+<head>
+
+<script type="text/javascript">
+
+var Mebel = {
+
+rodzaj:'krzeslo',
+kolor:'czarny',
+material:'drewno',
+
+Mebel_wyswietl_Dziewulski:function()
+{
+
+document.write("Obiekt: Mebel<br>");
+
+document.write("Pola:<br>");
+document.write("rodzaj<br>");
+document.write("kolor<br>");
+document.write("material<br>");
+
+document.write("Metoda: Mebel_wyswietl_Dziewulski<br><br>");
+
+document.write("Wartości pól:<br>");
+
+document.write(this.rodzaj + "<br>");
+document.write(this.kolor + "<br>");
+document.write(this.material + "<br>");
+
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<br>Programowanie obiektowe<br>
+
+<input type="button"
+value="Uruchom zadanie 30"
+onclick="Mebel.Mebel_wyswietl_Dziewulski()">
+
+</body>
+</html>
+</textarea>
